@@ -1,0 +1,32 @@
+Docker的三大组件：
+镜像、容器、仓库
+
+ctrl+P ctrl+Q可以退出容器但是不像exit会直接关闭容器，而是会使容器在后台运行
+
+Docker run -d +容器id 可以使容器运行  并且进入容器内部
+
+Docker logs +容器id：查看容器的运行情况
+
+Docker top 显示最近的运行情况
+
+Docker exec 在已经运行的容器中添加应用运行
+
+Docker stop/kill stop会停止容器的运行 但是需要等待一段时间 kill可以直接终止容器的运行
+
+注意使用Docker自带的手册学习Docker命令的详细介绍
+
+
+
+
+#在容器中部署静态网站（80端口）
+容器的端口映射：run [-P][-p]
+
+部署Nginx
+创建映射880端口的交互式容器
+安装Nginx
+安装文本编辑器
+创建静态页面
+修改Nginx配置文件
+运行Nginx
+验证网站访问
+
